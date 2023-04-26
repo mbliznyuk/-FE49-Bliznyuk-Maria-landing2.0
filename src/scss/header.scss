@@ -1,28 +1,45 @@
 .header {
-   background-image: url(../img/main-background.png); 
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   padding: 36px 0 120px;
-   position: relative;
-   z-index: 10;
-   &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: rgba(37, 43, 73, 0.8);
-    top: 0;
-    left: 0;
-    z-index: 11;
-   }
+    background-image: url(../img/main-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 36px 0 120px;
+    position: relative;
+    z-index: 10;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgba(37, 43, 73, 0.8);
+        top: 0;
+        left: 0;
+        z-index: 11;
+    }
 }
 
 .navigation-wrape {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(186, 187, 197, 1);
+    margin-bottom: 130px;
+    width: 100%;
+}
+
+.logo-title {
+    color: rgba(101, 105, 128, 1);
+    font-size: $_30px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    &::after {
+        content: 'box';
+        display: inline-block;
+        color: #fff;
+        font-weight: 400;
+    }
 }
 
 .navigation {
@@ -35,16 +52,51 @@
 }
 
 .navigation-list_item {
-    padding: 0 25px 40px;
+    padding-bottom: 40px;
     border-bottom: 3px solid transparent;
 
-        & a {
+    & a {
+        padding: 0 25px;
         color: #fff;
-        font-size: 13px;
+        font-size: $_13px;
         font-family: 700;
         text-transform: uppercase;
+        &:hover {
+            padding-bottom: 41px;
+            border-bottom: 3px solid #BABBC5;
+        }
+        &:active {
+            padding-bottom: 41px;
+            color: rgba(231, 20, 20, 1);
+            border-bottom: 3px solid rgba(231, 20, 20, 1);
+        }
     }
-    &:hover {
-        border-bottom: 3px solid #BABBC5;
+ }
+
+
+.main-title {
+    color: #fff;
+    font-size: $_64px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 31px;
+    width: 100%;
+}
+
+.header-discription {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    & p {
+        color: #fff;
+        font-size: $_24px;
+        font-weight: 400;
+        text-align: center;
     }
+
+}
+
+.header-link {
+    @include link;
 }

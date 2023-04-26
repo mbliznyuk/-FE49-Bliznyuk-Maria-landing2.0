@@ -7,7 +7,9 @@
 }
 
 @import "../scss/_cdn";
-@import "../scss/header.scss";
+@import "../scss/varFSize";
+@import "../scss/mixins";
+@import "../scss/header";
 
 html {
     font-family: 'Raleway', sans-serif;
