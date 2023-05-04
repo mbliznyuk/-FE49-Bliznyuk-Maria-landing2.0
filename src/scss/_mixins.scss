@@ -8,12 +8,23 @@
     text-align: center;
     margin: auto;
     line-height: 80px;
+    text-transform: uppercase;
 
     &:hover {
-        background-color:rgba(231, 20, 20, 1); 
+        background-color: rgba(231, 20, 20, 1);
     }
+
     &:active {
         background-color: rgba(255, 67, 67, 1);
         box-shadow: 4px 4px 30px #FF4343;
     }
-    }
+}
+
+@mixin icon {
+    color: rgba(198, 203, 205, 1);
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid rgba(198, 203, 205, 1);
+}

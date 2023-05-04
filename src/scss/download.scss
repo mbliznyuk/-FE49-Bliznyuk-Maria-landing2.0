@@ -1,0 +1,27 @@
+.download {
+    background-color: #fff;
+    padding: 119px 0 114px;
+}
+
+.download-title {
+    text-align: center;
+    font-size: $_30px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 30px;
+}
+
+.download-discription {
+   margin-bottom: 43px;
+   & p {
+    text-align: center;
+    text-transform: uppercase;
+    color:rgba(0, 0, 0, 1);
+    font-size: $_14px;
+    font-weight: 700;
+   }
+}
+
+.download-link {
+    @include link;
+}
