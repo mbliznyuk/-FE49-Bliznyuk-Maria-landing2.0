@@ -18,8 +18,11 @@
         background-color: rgba(255, 67, 67, 1);
         box-shadow: 4px 4px 30px #FF4343;
     }
+    
     @media (max-width: 480px) {
-        width: 80%;}
+        width: 80%;
+    }
+
     @media (max-width: 320px) {
         width: 90%;
     }
@@ -30,7 +33,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(198, 203, 205, 1);
-   
-    
+    color: rgba(198, 203, 205, 1);   
 }

@@ -22,12 +22,7 @@
     @media (max-width: 566px) {
         padding-bottom: 80px;
     }
-
-    @media (max-width: 320px) {}
 }
-
-
-
 
 .navigation-wrape {
     display: flex;
@@ -43,8 +38,6 @@
     @media (max-width: 566px) {
         margin-bottom: 60px;
     }
-
-
 }
 
 .logo-title {
@@ -55,17 +48,12 @@
     z-index: 70;
     position: absolute;
 
-    &.active {
-       
-    }
-
-    &::after {
+       &::after {
         content: 'box';
         display: inline-block;
         color: #fff;
         font-weight: 400;
     }
-
 }
 
 .navigation {
@@ -93,8 +81,6 @@
     @media (max-width: 566px) {
         height: 100%;
     }
-
-    @media (max-width: 320px) {}
 }
 
 .navigation-list {
@@ -109,19 +95,20 @@
         flex-direction: column;
         padding: 150px 10px 0;
     }
-    @media (max-width: 566px) {
-        padding: 90px 10px 0;;
-    }
 
-    @media (max-width: 320px) {}
+    @media (max-width: 566px) {
+        padding: 90px 10px 0;
+    }
 }
 
 .navigation-list_item {
     padding-bottom: 41px;
     border-bottom: 3px solid transparent;
+
     @media (max-width: 566px) {
         padding-bottom: 10px;
     }
+
     & a {
         padding: 0 25px;
         color: #fff;
@@ -138,26 +125,28 @@
             font-size: $_30px;
         }
 
-        
         @media (max-width: 566px) {
             font-size: $_24px;
         }
 
-        @media (max-width: 320px) {}
-
         &:hover {
             padding-bottom: 41px;
             border-bottom: 4px solid #BABBC5;
+            @media (max-width: 660px) { 
+                border-bottom: 4px solid transparent;
+            }
         }
 
         &:active {
             padding-bottom: 41px;
             color: rgba(231, 20, 20, 1);
             border-bottom: 4px solid rgba(231, 20, 20, 1);
+            @media (max-width: 660px) { 
+                border-bottom: 4px solid transparent;
+            }
         }
     }
 }
-
 
 .main-title {
     color: #fff;
@@ -172,8 +161,6 @@
         font-size: $_36px;
         margin-bottom: 40px;
     }
-
-    @media (max-width: 320px) {}
 }
 
 .header-discription {
@@ -194,10 +181,7 @@
         @media (max-width: 566px) {
             font-size: $_18px;
         }
-
-        @media (max-width: 320px) {}
     }
-
 }
 
 .burger {
@@ -217,13 +201,11 @@
         background-color: rgba(255, 255, 255, 0);
     }
 
-
     .fa-bars {
         color: #fff;
         font-size: 2rem;
         vertical-align: middle;
     }
-
 }
 
 .header-link {
