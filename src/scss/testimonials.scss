@@ -153,15 +153,11 @@
 
 .item-pagination {
     background-color: #fff;
-
-    @media (max-width: 767px) {
-        display: none;
-    }
 }
 
 
 .swiper-pagination-bullet {
-    border: 1px black solid;
+    border: 1px solid rgba(92, 50, 73, 1)!important;
     background: #fff !important;
 }
 
